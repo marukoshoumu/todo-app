@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+input {
+  border-radius: 8px;
+  border: none;
+  padding: 6px 16px;
+  margin: 0px 10px;
+  width: 120px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 4px 16px;
+  margin: 0px 2px;
+}
+
+button:hover {
+  background-color: #79a8a9;
+  color: #fff;
+  cursor: pointer;
+}
+
+select {
+  border-radius: 8px;
+  padding: .4em;
+  border: 2px solid #2589d0;
+  color: #333333;
+  cursor: pointer;
+}
+
+.todo-area {
+  border: 2px solid #07edf5;
+  width: 800px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.list-row {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: small;
+}
+
+.list-row p {
+  min-width: 120px;
+  padding: 6px 16px;
+  margin: 0px 10px;
+}
+
+.todo-item {
+  border-radius: 8px;
+}
+
+.todo-item.notStarted {
+  background-color: #d8ecf4;
+}
+
+.todo-item.inProgress {
+  background-color: #e5fadf;
+}
+
+.todo-item.done {
+  background-color: #cdcecd;
+}
+
+.form-area {
+  background-color: #c6e5d9;
+  width: 800px;
+  height: 30px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+
 }
